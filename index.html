@@ -10,9 +10,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="dist/output.css" />
 
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
@@ -24,6 +21,7 @@
 </head>
 
 <body>
+
   <!-- Header Start -->
   <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
     <div class="container">
@@ -63,8 +61,8 @@
               </li>
 
               <li class="group">
-                <a href="#blog "
-                  class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                <a href="#kelas "
+                  class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Class</a>
               </li>
 
               <li class="group">
@@ -130,17 +128,18 @@
             Saya</a>
         </div>
 
-        <div class="w-full self-end px-4 lg:w-1/2">
+        <div class="w-full self-end px-4 lg:w-1/2 avatar-img">
           <div class="relative mt-10 lg:mt-0 lg:right-0">
-            <img src="dist/img/avatar.png" alt="Milan Lizriadi" class="relative z-10 max-w-full mx-auto" />
+            <img src="dist/img/avatar3.png" alt="Milan Lizriadi" width="450" class="relative z-10 max-w-full mx-auto" />
 
-            <span class="absolute -bottom-[35px]  left-1/2 -translate-x-1/2 md:scale-125">
+            <!-- <span class="absolute -bottom-[35px]  left-1/2 -translate-x-1/2 md:scale-125">
               <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f59e0b"
                   d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z"
                   transform="translate(100 100)" />
               </svg>
-            </span>
+            </span> -->
+
           </div>
         </div>
       </div>
@@ -153,25 +152,24 @@
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full px-4 mb-10 lg:w-1/2">
-          <h4 class="font-bold uppercase text-primary text-lg mb-5 max-w-xl" data-aos="fade-right">TENTANG SAYA</h4>
-          <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white" data-aos="fade-up"
-            data-aos-delay="500">Terus Belajar Menjadi Programmer Handal</h2>
-          <!-- <p class="font-medium text-base text-secondary lg:text-lg" data-aos="fade-right" data-aos-delay="1500">Terus
-            Belajar</p> -->
+          <h4 class="font-bold uppercase text-primary text-lg mb-5 max-w-xl">TENTANG SAYA</h4>
+          <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Skill</h2>
+
+
+          <p class="font-medium text-base text-secondary lg:text-lg">Coming
+            Soon</p>
         </div>
 
         <div class="w-full px-4 lg:w-1/2">
-          <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white" data-aos="fade-up"
-            data-aos-delay="1000">
+          <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">
             Mari Berteman</h3>
-          <p class="font-medium text-base text-secondary mb-6 lg:text-lg" data-aos="fade-left" data-aos-delay="2000">
+          <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
             Mari Berteman Dan Sharing Informasi</p>
 
           <div class="flex items-center">
             <!-- YouTube -->
             <a href="https://www.youtube.com/channel/UCKdt3K_1PLF8lCJre00bdlQ" target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="2200">
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>YouTube</title>
                 <path
@@ -181,8 +179,7 @@
 
             <!-- Instagram -->
             <a href="https://www.instagram.com/milanlizriadi/" target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="2400">
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -192,8 +189,7 @@
 
             <!-- Twitter -->
             <a href="https://www.instagram.com/milanlizriadi/" target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="2600">
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Twitter</title>
                 <path
@@ -204,8 +200,7 @@
 
             <!-- Github -->
             <a href="https://www.instagram.com/milanlizriadi/" target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="2800">
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -215,8 +210,7 @@
 
             <!-- Facebook -->
             <a href="https://www.facebook.com/profile.php?id=100082537265327" target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-              data-aos="zoom-in" data-aos-delay="3000">
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Facebook</title>
                 <path
@@ -235,10 +229,9 @@
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-right">PORTFOLIO</h4>
-          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white" data-aos="fade-up"
-            data-aos-delay="500">Project Saya</h2>
-          <p class="font-medium text-md text-secondary md:text-lg" data-aos="fade-up" data-aos-delay="1000">Project Yang
+          <h4 class="font-semibold text-lg text-primary mb-2">PORTFOLIO</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Project Saya</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">Project Yang
             Saya Buat</p>
         </div>
       </div>
@@ -248,14 +241,12 @@
         <!-- Portfolio Bootstrap 5 -->
         <div class="mb-12 p-4 md:w-1/2">
           <a href="https://milanlizriadi.github.io/" target="_blank">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-right" data-aos-delay="1100"
-              data-aos-duration="1000">
+            <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/portfolio/1.png" alt="Website Portfolio Menggunakan Bootstrap 5" class="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3" data-aos="fade-right"
-              data-aos-delay="1500">
+            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Portfolio Menggunakan <span class="text-violet-700">Bootstrap 5</span></h3>
-            <p class="font-medium text-base text-secondary" data-aos="fade-right" data-aos-delay="2000">Lorem ipsum
+            <p class="font-medium text-base text-secondary">Lorem ipsum
               dolor, sit amet consectetur adipisicing elit.
               Illum cumque molestias est consequuntur numquam sequi placeat quisquam fugiat ipsam nihil.</p>
           </a>
@@ -264,14 +255,12 @@
         <!-- Calculator JavaScript -->
         <div class="mb-12 p-4 md:w-1/2">
           <a href="https://calculator-milan.netlify.app/" target="_blank">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-left" data-aos-delay="1100"
-              data-aos-duration="1000">
+            <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/portfolio/2.png" alt="Calculator Menggunakan JavaScript" class="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3" data-aos="fade-left"
-              data-aos-delay="1500">
+            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Calculator Menggunakan <span class="text-yellow-400">JavaScript</span></h3>
-            <p class="font-medium text-base text-secondary" data-aos="fade-left" data-aos-delay="2000">Lorem ipsum
+            <p class="font-medium text-base text-secondary">Lorem ipsum
               dolor, sit amet consectetur adipisicing elit.
               Quod quidem incidunt doloribus.</p>
           </a>
@@ -280,14 +269,12 @@
         <!-- TokoUmaku -->
         <div class="mb-12 p-4 md:w-1/2">
           <a href="https://tokoumaku.github.io/" target="_blank">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-right" data-aos-delay="1500"
-              data-aos-duration="1000">
+            <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/portfolio/3.png" alt="Calculator Menggunakan JavaScript" class="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3" data-aos="fade-right"
-              data-aos-delay="1500">
+            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Website Tokoumaku Menggunakan <span class="text-violet-700">Bootstrap 5</span></h3>
-            <p class="font-medium text-base text-secondary" data-aos="fade-right" data-aos-delay="2000">Lorem ipsum,
+            <p class="font-medium text-base text-secondary">Lorem ipsum,
               dolor sit amet consectetur adipisicing elit. Praesentium assumenda rem iste neque eius ex?.</p>
           </a>
         </div>
@@ -295,14 +282,12 @@
         <!-- Fighting Game -->
         <div class="mb-12 p-4 md:w-1/2">
           <a href="https://fighting-game-milan.netlify.app/" target="_blank">
-            <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-left" data-aos-delay="1500"
-              data-aos-duration="1000">
+            <div class="rounded-md shadow-md overflow-hidden">
               <img src="dist/img/portfolio/4.png" alt="Calculator Menggunakan JavaScript" class="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3" data-aos="fade-left"
-              data-aos-delay="1500">
+            <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Fighting Game Menggunakan <span class="text-yellow-400">JavaScript</span></h3>
-            <p class="font-medium text-base text-secondary" data-aos="fade-left" data-aos-delay="2000">Lorem ipsum dolor
+            <p class="font-medium text-base text-secondary">Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Dolorum necessitatibus eligendi totam reprehenderit a vitae
               doloremque laborum.</p>
           </a>
@@ -318,11 +303,10 @@
     <div class="container">
       <div class="w-full px-4">
         <div class=" mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-right">CLIENTS</h4>
-          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark" data-aos="fade-up"
-            data-aos-delay="500">Yang Pernah Bekerja Sama
+          <h4 class="font-semibold text-lg text-primary mb-2">CLIENTS</h4>
+          <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-dark">Yang Pernah Bekerja Sama
           </h2>
-          <p class="font-medium text-md text-secondary md:text-lg" data-aos="fade-up" data-aos-delay="1000">Aslinya
+          <p class="font-medium text-md text-secondary md:text-lg">Aslinya
             belum ya gaes</p>
         </div>
       </div>
@@ -330,26 +314,22 @@
       <div class="w-full px-4">
         <div class="flex flex-wrap items-center justify-center">
           <a href="https://www.google.com/" target="_blank"
-            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            data-aos="zoom-in" data-aos-delay="1300">
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="dist/img/clients/google.svg" alt="Google">
           </a>
 
           <a href="https://www.gojek.com/" target="_blank"
-            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            data-aos="zoom-in" data-aos-delay="1600">
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="dist/img/clients/gojek.svg" alt="Gojek">
           </a>
 
           <a href="https://www.tokopedia.com/" target="_blank"
-            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            data-aos="zoom-in" data-aos-delay="1900">
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="dist/img/clients/tokopedia.svg" alt="Tokopedia">
           </a>
 
           <a href="https://www.traveloka.com/" target="_blank"
-            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
-            data-aos="zoom-in" data-aos-delay="2100">
+            class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="dist/img/clients/traveloka.svg" alt="Traveloka">
           </a>
         </div>
@@ -358,51 +338,51 @@
   </section>
   <!-- Clients Section End -->
 
-  <!-- Blog Section Start -->
-  <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+  <!-- Kelas Section Start -->
+  <section id="kelas" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-right">BLOG</h4>
-          <!-- <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white" data-aos="fade-up"
-            data-aos-delay="500">Tulisan Terkini</h2> -->
-          <p class="font-medium text-md text-secondary md:text-lg" data-aos="fade-up" data-aos-delay="1000">Lorem ipsum
+          <h4 class="font-semibold text-lg text-primary mb-2">KELAS</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Kelas Coding</h2>
+          <!-- <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum
             dolor, sit amet consectetur adipisicing
-            elit. Veritatis pariatur illo necessitatibus laborum.</p>
+            elit. Veritatis pariatur illo necessitatibus laborum.</p> -->
         </div>
       </div>
 
       <div class="flex flex-wrap">
+
+        <!-- Kelas Website di Piwulang Becik -->
         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800" data-aos="fade-up"
-            data-aos-delay="1400" data-aos-duration="400">
-            <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="dist/img/portfolio/Kelas Website.jpg" alt="Website" class="w-full">
 
             <div class="py-8 px-6">
               <h3>
                 <a href="#"
-                  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips
-                  Belajar Programming</a>
+                  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Membuat
+                  Website Untuk Pemula</a>
               </h3>
-              <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Omnis, facere quibusdam. Quibusdam nobis reprehenderit pariatur.</p>
+              <p class="font-medium text-base text-secondary mb-6">Kelas membuat Website di <a
+                  href="https://piwulangbecik.com/" class="text-orange-500" target="_blank">PKBM Piwulang
+                  Becik</a></p>
 
-              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
-                Selengkapnya</a>
+              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Hasil
+                Karya</a>
             </div>
           </div>
         </div>
 
+        <!-- Kelas Scratch -->
         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800" data-aos="fade-up"
-            data-aos-delay="1800" data-aos-duration="400">
-            <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Mechanical Keyboard" class="w-full">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="dist/img/portfolio/logo-scratch.png" alt="Scratch" class="w-full p-14 logo-scratch">
 
             <div class="py-8 px-6">
               <h3>
                 <a href="#"
-                  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Review
-                  Keyboard</a>
+                  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Scratch</a>
               </h3>
               <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing
                 elit. Culpa deserunt provident quo aut.
@@ -415,16 +395,15 @@
           </div>
         </div>
 
+        <!-- Kelas Python -->
         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800" data-aos="fade-up"
-            data-aos-delay="2200" data-aos-duration="400">
-            <img src="https://source.unsplash.com/360x200?coffee" alt="Coffe" class="w-full">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="dist/img/portfolio/logo-python.png" alt="Python" class="w-full logo-python">
 
             <div class="py-8 px-6">
               <h3>
                 <a href="#"
-                  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Menikmati
-                  Secangkir Kopi</a>
+                  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Python</a>
               </h3>
               <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Dicta incidunt reiciendis ullam voluptas necessitatibus consectetur!</p>
@@ -437,17 +416,16 @@
       </div>
     </div>
   </section>
-  <!-- Blog Section End -->
+  <!-- Kelas Section End -->
 
   <!-- Contact Section Start -->
   <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2" data-aos="fade-right">CONTACT</h4>
-          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white" data-aos="fade-up"
-            data-aos-delay="500">Hubungi Saya</h2>
-          <p class="font-medium text-md text-secondary md:text-lg" data-aos="fade-up" data-aos-delay="1000">Lorem ipsum,
+          <h4 class="font-semibold text-lg text-primary mb-2">CONTACT</h4>
+          <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Saya</h2>
+          <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum,
             dolor sit amet consectetur adipisicing
             elit. Libero, nam.</p>
         </div>
@@ -456,25 +434,25 @@
       <form>
         <div class="w-full lg:w-2/3 lg:mx-auto">
 
-          <div class="w-full px-4 mb-8" data-aos="fade-right" data-aos-delay="1200">
-            <label for="name" class="text-base text-primary font-bold" data-aos="fade-right">Name</label>
+          <div class="w-full px-4 mb-8">
+            <label for="name" class="text-base text-primary font-bold">Name</label>
             <input type="text" id="name"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
           </div>
 
-          <div class=" w-full px-4 mb-8" data-aos="fade-right" data-aos-delay="1400">
-            <label for="email" class="text-base text-primary font-bold" data-aos="fade-right">Email</label>
+          <div class=" w-full px-4 mb-8">
+            <label for="email" class="text-base text-primary font-bold">Email</label>
             <input type="email" id="email"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
           </div>
 
-          <div class="w-full px-4 mb-8" data-aos="fade-right" data-aos-delay="1600">
-            <label for="message" class="text-base text-primary font-bold" data-aos="fade-right">Message</label>
+          <div class="w-full px-4 mb-8">
+            <label for="message" class="text-base text-primary font-bold">Message</label>
             <textarea type=" text" id="message"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
           </div>
 
-          <div class="w-full px-4" data-aos="fade-up" data-aos-delay="1800">
+          <div class="w-full px-4">
             <button
               class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
           </div>
@@ -503,15 +481,15 @@
           <ul class="text-slate-300">
 
             <li>
-              <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Programming</a>
+              <a href="#" class="inline-block text-base hover:text-primary mb-3">Programming</a>
             </li>
 
             <li>
-              <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Technology</a>
+              <a href="#" class="inline-block text-base hover:text-primary mb-3">Technology</a>
             </li>
 
             <li>
-              <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Lifestyle</a>
+              <a href="#" class="inline-block text-base hover:text-primary mb-3">Lifestyle</a>
             </li>
 
           </ul>
@@ -538,7 +516,7 @@
             </li>
 
             <li>
-              <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+              <a href="#kelas" class="inline-block text-base hover:text-primary mb-3">Class</a>
             </li>
 
             <li>
@@ -611,13 +589,6 @@
 
   <!-- JavaScript -->
   <script src="dist/js/script.js"></script>
-
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      // once: true,
-    });
 
   </script>
 

@@ -903,6 +903,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.p-14 {
+  padding: 3.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1084,6 +1088,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 .text-sky-500 {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
@@ -1187,6 +1196,107 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   --tw-translate-x: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.avatar-img {
+  -webkit-animation: avatar-img 3s ease infinite;
+          animation: avatar-img 3s ease infinite;
+}
+
+.logo-scratch {
+  -webkit-animation: logo-scratch 3s ease infinite;
+          animation: logo-scratch 3s ease infinite;
+}
+
+.logo-python {
+  -webkit-animation: logo-python 3s ease infinite;
+          animation: logo-python 3s ease infinite;
+}
+
+/* Keyframes */
+
+@-webkit-keyframes avatar-img {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes avatar-img {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes logo-scratch {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes logo-scratch {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes logo-python {
+  0% {
+    transform: translateX(-35px);
+  }
+
+  50% {
+    transform: translateX(35px);
+  }
+
+  100% {
+    transform: translateX(-35px);
+  }
+}
+
+@keyframes logo-python {
+  0% {
+    transform: translateX(-35px);
+  }
+
+  50% {
+    transform: translateX(35px);
+  }
+
+  100% {
+    transform: translateX(-35px);
+  }
 }
 
 .hover\:border-primary:hover {

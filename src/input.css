@@ -30,3 +30,52 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+.avatar-img {
+  animation: avatar-img 3s ease infinite;
+}
+
+.logo-scratch {
+  animation: logo-scratch 3s ease infinite;
+}
+
+.logo-python {
+  animation: logo-python 3s ease infinite;
+}
+
+/* Keyframes */
+@keyframes avatar-img {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes logo-scratch {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes logo-python {
+  0% {
+    transform: translateX(-35px);
+  }
+  50% {
+    transform: translateX(35px);
+  }
+  100% {
+    transform: translateX(-35px);
+  }
+}
