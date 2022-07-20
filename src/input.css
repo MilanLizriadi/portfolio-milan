@@ -31,6 +31,25 @@ body {
   @apply translate-x-3;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Logo Animation */
 .avatar-img {
   animation: avatar-img 3s ease infinite;
 }
@@ -48,9 +67,11 @@ body {
   0% {
     transform: translateY(10px);
   }
+
   50% {
     transform: translateY(-50px);
   }
+
   100% {
     transform: translateY(10px);
   }
@@ -60,9 +81,11 @@ body {
   0% {
     transform: translateY(-15px);
   }
+
   50% {
     transform: translateY(40px);
   }
+
   100% {
     transform: translateY(-15px);
   }
@@ -72,10 +95,28 @@ body {
   0% {
     transform: translateX(-35px);
   }
+
   50% {
     transform: translateX(35px);
   }
+
   100% {
     transform: translateX(-35px);
+  }
+}
+
+.toast {
+  animation: toast 0.5s forwards;
+}
+
+@keyframes toast {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

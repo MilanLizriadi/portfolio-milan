@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en, id" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="dist/img/avatar3.png" type="image/x-icon">
   <title>Portfolio Milan</title>
 
   <!-- CSS -->
@@ -16,7 +17,6 @@
     } else {
       document.documentElement.classList.remove('dark')
     }
-
   </script>
 </head>
 
@@ -55,10 +55,10 @@
                   class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
               </li>
 
-              <li class="group">
+              <!-- <li class="group">
                 <a href="#clients "
                   class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
-              </li>
+              </li> -->
 
               <li class="group">
                 <a href="#kelas "
@@ -246,9 +246,9 @@
             </div>
             <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Portfolio Menggunakan <span class="text-violet-700">Bootstrap 5</span></h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum
+            <!-- <p class="font-medium text-base text-secondary">Lorem ipsum
               dolor, sit amet consectetur adipisicing elit.
-              Illum cumque molestias est consequuntur numquam sequi placeat quisquam fugiat ipsam nihil.</p>
+              Illum cumque molestias est consequuntur numquam sequi placeat quisquam fugiat ipsam nihil.</p> -->
           </a>
         </div>
 
@@ -260,9 +260,9 @@
             </div>
             <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Calculator Menggunakan <span class="text-yellow-400">JavaScript</span></h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum
+            <!-- <p class="font-medium text-base text-secondary">Lorem ipsum
               dolor, sit amet consectetur adipisicing elit.
-              Quod quidem incidunt doloribus.</p>
+              Quod quidem incidunt doloribus.</p> -->
           </a>
         </div>
 
@@ -274,8 +274,8 @@
             </div>
             <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Website Tokoumaku Menggunakan <span class="text-violet-700">Bootstrap 5</span></h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Praesentium assumenda rem iste neque eius ex?.</p>
+            <!-- <p class="font-medium text-base text-secondary">Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Praesentium assumenda rem iste neque eius ex?.</p> -->
           </a>
         </div>
 
@@ -287,9 +287,9 @@
             </div>
             <h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
               Fighting Game Menggunakan <span class="text-yellow-400">JavaScript</span></h3>
-            <p class="font-medium text-base text-secondary">Lorem ipsum dolor
+            <!-- <p class="font-medium text-base text-secondary">Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Dolorum necessitatibus eligendi totam reprehenderit a vitae
-              doloremque laborum.</p>
+              doloremque laborum.</p> -->
           </a>
         </div>
 
@@ -298,7 +298,7 @@
   </section>
   <!-- Portfolio Section End -->
 
-  <!-- Clients Section Start -->
+  <!-- Clients Section Start
   <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
     <div class="container">
       <div class="w-full px-4">
@@ -336,7 +336,7 @@
       </div>
     </div>
   </section>
-  <!-- Clients Section End -->
+  Clients Section End -->
 
   <!-- Kelas Section Start -->
   <section id="kelas" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
@@ -451,36 +451,46 @@
         <div class="max-w-xl mx-auto text-center mb-16">
           <h4 class="font-semibold text-lg text-primary mb-2">CONTACT</h4>
           <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Hubungi Saya</h2>
-          <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum,
+          <!-- <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum,
             dolor sit amet consectetur adipisicing
-            elit. Libero, nam.</p>
+            elit. Libero, nam.</p> -->
         </div>
       </div>
 
-      <form>
+
+      <form name="milan-contact-form">
         <div class="w-full lg:w-2/3 lg:mx-auto">
 
           <div class="w-full px-4 mb-8">
             <label for="name" class="text-base text-primary font-bold">Name</label>
-            <input type="text" id="name"
+            <input type="text" id="name" autocomplete="off" required="required" name="name"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
           </div>
 
           <div class=" w-full px-4 mb-8">
             <label for="email" class="text-base text-primary font-bold">Email</label>
-            <input type="email" id="email"
+            <input type="email" id="email" required="required" name="email"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
           </div>
 
           <div class="w-full px-4 mb-8">
             <label for="message" class="text-base text-primary font-bold">Message</label>
-            <textarea type=" text" id="message"
+            <textarea type=" text" id="message" autocomplete="off" required="required" name="message"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
           </div>
 
           <div class="w-full px-4">
-            <button
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+            <button type="submit"
+              class="btn-send text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+              Send
+            </button>
+          </div>
+
+          <div class="w-full px-4">
+            <button type="submit" title="loading..." disabled
+              class="btn-loading hidden text-base font-semibold opacity-60 text-white bg-primary py-3 px-8 rounded-full w-full hover:shadow-lg transition duration-500">
+              Send
+            </button>
           </div>
 
         </div>
@@ -537,9 +547,9 @@
               <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#clients" class="inline-block text-base hover:text-primary mb-3">Clients</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#kelas" class="inline-block text-base hover:text-primary mb-3">Class</a>
@@ -605,7 +615,7 @@
 
   <!-- Back To Top Start -->
   <a href="#home"
-    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 animate-bounce"
+    class="fixed bottom-4 right-4 z-10 hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 animate-bounce"
     id="to-top">
     <span class="mt-2 block h-5 w-5 border-t-2 border-l-2 rotate-45">
 
@@ -613,8 +623,64 @@
   </a>
   <!-- Back To Top End -->
 
+  <!-- Message Alert Start -->
+  <div class="fixed right-0 top-12 m-5 z-[9999] hidden my-alert toast">
+    <div class="flex items-center bg-green-500 border-l-4 border-green-700 py-2 px-3 shadow-md mb-2">
+      <!-- icons -->
+      <div class="text-green-500 rounded-full bg-white mr-3">
+        <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+        </svg>
+      </div>
+      <!-- message -->
+      <div class="text-white max-w-xs">
+        <h2><strong>Terimakasih!</strong></h2>
+
+        <h2>
+          Pesan Anda Sudah Kami Terima
+        </h2>
+      </div>
+    </div>
+  </div>
+  <!-- Message Alert End -->
+
   <!-- JavaScript -->
   <script src="dist/js/script.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby0_dHur23RwzGz_nkt0-vjF_Qm37Qpt-71uhZZEgtDNHaAffvnMmTSCy1hlCMiw0P6/exec'
+    const form = document.forms['milan-contact-form']
+    const btnSend = document.querySelector(".btn-send")
+    const btnLoading = document.querySelector(".btn-loading")
+    const myAlert = document.querySelector(".my-alert")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      // Ketika Tombol submit Di Klik
+      // Tampilkan tombol loading, hilangkan tombol kirim
+      btnLoading.classList.toggle('hidden')
+      btnSend.classList.toggle('hidden')
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // Tampilkan kirim, hilangkan tombol loading
+          btnLoading.classList.toggle('hidden')
+          btnSend.classList.toggle('hidden')
+
+          // Tampilkan Alert
+          myAlert.classList.toggle('hidden')
+
+          // Reset Form
+          form.reset()
+
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
   </script>
 
