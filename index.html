@@ -11,6 +11,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="dist/output.css" />
 
+  <!-- Sweetalert2 -->
+  <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
@@ -476,7 +479,7 @@
         <div class="w-full lg:w-2/3 lg:mx-auto">
 
           <div class="w-full px-4 mb-8">
-            <label for="name" class="text-base text-primary font-bold">Name</label>
+            <label for="name" class="text-base text-primary font-bold">Nama</label>
             <input type="text" id="name" autocomplete="off" required="required" name="name"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
           </div>
@@ -488,7 +491,7 @@
           </div>
 
           <div class="w-full px-4 mb-8">
-            <label for="message" class="text-base text-primary font-bold">Message</label>
+            <label for="message" class="text-base text-primary font-bold">Pesan</label>
             <textarea type=" text" id="message" autocomplete="off" required="required" name="message"
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
           </div>
@@ -496,14 +499,14 @@
           <div class="w-full px-4">
             <button type="submit"
               class="btn-send text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
-              Send
+              Kirim
             </button>
           </div>
 
           <div class="w-full px-4">
             <button type="submit" title="loading..." disabled
               class="btn-loading hidden text-base font-semibold opacity-60 text-white bg-primary py-3 px-8 rounded-full w-full hover:shadow-lg transition duration-500">
-              Send
+              Kirim
             </button>
           </div>
 
@@ -663,6 +666,9 @@
   <!-- JavaScript -->
   <script src="dist/js/script.js"></script>
 
+  <!-- Sweetalert2 -->
+  <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycby0_dHur23RwzGz_nkt0-vjF_Qm37Qpt-71uhZZEgtDNHaAffvnMmTSCy1hlCMiw0P6/exec'
     const form = document.forms['milan-contact-form']
@@ -685,7 +691,11 @@
           btnSend.classList.toggle('hidden')
 
           // Tampilkan Alert
-          myAlert.classList.toggle('hidden')
+          Swal.fire(
+            'Terimakasih!',
+            'Pesan Anda Sudah Kami Terima',
+            'success'
+          )
 
           // Reset Form
           form.reset()
